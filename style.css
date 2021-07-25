@@ -1,0 +1,111 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.main {
+  background-color: rgb(245, 245, 245);
+  width: 80%;
+  position: relative;
+  border: rgb(150, 150, 150) solid 2px;
+}
+
+.heading {
+  width: 100%;
+  position: absolute;
+  top: 5vh;
+}
+
+.heading h2 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.formElements {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  width: 30%;
+  padding-left: 3%;
+}
+
+.element {
+  padding-bottom: 5%;
+}
+
+.element label {
+  padding-bottom: 3%;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.element input {
+  font-size: 12pt;
+  font-weight: normal;
+}
+
+textarea {
+  width: 70%;
+  height: 70px;
+  font-size: 12pt;
+  font-weight: normal;
+}
+
+.userTypeElements label {
+  font-weight: normal;
+  color: rgb(85, 85, 85);
+  font-size: 12pt;
+}
+
+select {
+  font-size: 12pt;
+  font-weight: normal;
+  color: rgb(133, 133, 133);
+  width: 50%;
+  border: rgb(0, 0, 0) solid 2px;
+}
+
+.button {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.button button {
+  color: white;
+  background-color: black;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+@media (max-width: 1300px) {
+  .formElements {
+    padding-top: 16%;
+  }
+  .section {
+    width: 40%;
+  }
+}
+
+@media (max-width: 910px) {
+  .section {
+    width: 40%;
+  }
+}
+
+@media (max-width: 750px) {
+  .formElements {
+    padding-top: 25%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section {
+    width: 80%;
+  }
+}

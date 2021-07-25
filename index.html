@@ -5,38 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <div class="main">
         <div class="heading">
-            <h2>Enter User Information</h2>
+            <h2>Enter User Informations</h2>
         </div>
-        <form>
-            <label for="fname">First Name</label><br>
-            <input type="text" placeholder="Enter your First Name"><br>
-            <label for="email">Email Address</label><br>
-            <input type="text" placeholder="Enter your Email"><br>
-            <label for="lname">Last Name</label><br>
-            <input type="text" placeholder="Enter your Last Name"><br>
-            <label for="userType">User Type</label><br>
-            <input type="radio" value="School">
-            <label for="school">School</label>
-            <input type="radio" value="University">
-            <label for="school">University</label>
-            <input type="radio" value="Employee">
-            <label for="school">Employee</label><br>
-            <label for="contact">Contact Number</label><br>
-            <input type="text" placeholder="Enter your Number"><br>
-            <label for="payment">Payment Type</label><br>
-            <select>
-                <option value="fullpayment">Full Payment</option>
-                <option value="halfpayment">Half Payment</option>
-            </select><br>
-            <label for="address">Address</label><br>
-            <textarea></textarea><br>
-            <button>Submit</button>
-        </form>
+        <div class="form">
+            <form>
+                <div class="formElements">
+                <div class="section">
+                    <div class="element">
+                        <label for="fname">First Name</label><br>
+                        <input type="text" placeholder="Type first name here">
+                    </div>
+                    <div class="element">
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" placeholder="Type last name here">
+                    </div>
+                    <div class="element">
+                        <label for="contact">Contact Number</label><br>
+                        <input type="text" placeholder="Type contact number here">
+                    </div>
+                    <div class="element">
+                        <label for="address">Address</label><br>
+                        <textarea placeholder="Type user address here"></textarea>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="element">
+                        <label for="email">Email Address</label><br>
+                        <input type="text" placeholder="Type email address here">
+                    </div>
+        
+                    <div class="element">
+                        <label for="userType">User Type</label><br>
+                        <div class="userTypeElements">
+                        <input type="radio" value="School">
+                        <label for="school">School</label>
+                        <input type="radio" value="University">
+                        <label for="school">University</label>
+                        <input type="radio" value="Employee">
+                        <label for="school">Employee</label>
+                        </div>
+                    </div>
+        
+                    <div class="element">
+                        <label for="payment">Payment Type</label><br>
+                        <select>
+                            <option value="fullpayment">Full Payment</option>
+                            <option value="halfpayment">Half Payment</option>
+                        </select>
+                    </div>
+                </div>
+                </div>
+                <div class="button">
+                
+                    <button>Submit</button>
+                </div>
+                
+            </form>
+        </div>
             
     </div>
+    
 </body>
 </html>
