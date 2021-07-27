@@ -1,3 +1,7 @@
+/* SparkX Assignment
+Registration form for a library 
+Form styling */
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -99,7 +103,7 @@ select {
 
 @media (max-width: 1300px) {
   .formElements {
-    padding-top: 16%;
+    padding-top: 14%;
   }
   .section {
     width: 40%;
@@ -107,6 +111,9 @@ select {
 }
 
 @media (max-width: 910px) {
+  .formElements {
+    padding-top: 16%;
+  }
   .section {
     width: 40%;
   }
