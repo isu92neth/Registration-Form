@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap"
         rel="stylesheet">
+    
+    
 </head>
 <body>
     <div class="main">
@@ -18,62 +20,70 @@
             <h2>Enter User Informations</h2>
         </div>
         <div class="form">
-            <form>
+            <form id="registration">
                 <div class="formElements">
                 <div class="section">
                     <div class="element">
                         <label for="fname">First Name</label><br>
-                        <input type="text" placeholder="Type first name here">
+                        <input type="text" placeholder="Type first name here" id="fname">
+                        <label class="error" id="fnameError"></label>
                     </div>
                     <div class="element">
                         <label for="lname">Last Name</label><br>
-                        <input type="text" placeholder="Type last name here">
+                        <input type="text" placeholder="Type last name here" id="lname">
+                        <label class="error" id="lnameError"></label>
                     </div>
                     <div class="element">
                         <label for="contact">Contact Number</label><br>
-                        <input type="text" placeholder="Type contact number here">
+                        <input type="text" placeholder="Type contact number here" id="contact">
+                        <label class="error" id="contactError"></label>
                     </div>
                     <div class="element">
                         <label for="address">Address</label><br>
-                        <textarea placeholder="Type user address here"></textarea>
+                        <textarea placeholder="Type user address here" id="address"></textarea>
+                        <label class="error" id="addressError"></label>
                     </div>
                 </div>
                 <div class="section">
                     <div class="element">
                         <label for="email">Email Address</label><br>
-                        <input type="text" placeholder="Type email address here">
+                        <input type="text" placeholder="Type email address here" id="email">
+                        <label class="error" id="emailError"></label>
                     </div>
         
                     <div class="element">
                         <label for="userType">User Type</label><br>
                         <div class="userTypeElements">
-                        <input type="radio" value="School">
+                        <input type="radio" value="School" id="school">
                         <label for="school">School</label>
-                        <input type="radio" value="University">
-                        <label for="school">University</label>
-                        <input type="radio" value="Employee">
-                        <label for="school">Employee</label>
+                        <input type="radio" value="University" id="university">
+                        <label for="university">University</label>
+                        <input type="radio" value="Employee" id="employee">
+                        <label for="employee">Employee</label>
+                        <label class="error" id="userTypeError"></label>
                         </div>
                     </div>
         
                     <div class="element">
                         <label for="payment">Payment Type</label><br>
-                        <select>
+                        <select id="payment">
                             <option value="fullpayment">Full Payment</option>
                             <option value="halfpayment">Half Payment</option>
                         </select>
+                        <label class="error" id="paymentError"></label>
                     </div>
                 </div>
                 </div>
                 <div class="button">
                 
-                    <button>Submit</button>
+                    <button onclick="validate" type="submit">Submit</button>
                 </div>
                 
             </form>
         </div>
             
     </div>
+    <script src="./index.js"></script>
     
 </body>
 </html>
