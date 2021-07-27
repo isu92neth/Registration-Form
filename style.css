@@ -91,8 +91,10 @@ select {
   transform: scale(1.2);
 }
 
-.error {
+.element .error {
   color: red;
+  font-size: 11pt;
+  font-weight: normal;
 }
 
 @media (max-width: 1300px) {
