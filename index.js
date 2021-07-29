@@ -9,7 +9,7 @@ const email = document.getElementById("email");
 const address = document.getElementById("address");
 const contact = document.getElementById("contact");
 const payment = document.getElementById("payment");
-const userTypes = document.getElementsByName("userTypes");
+const userType = document.getElementsByName("userTypes");
 const form = document.getElementById("registration");
 
 //used for input format validations
@@ -32,7 +32,7 @@ form.addEventListener("submit", (e) => {
     success = false;
   } else if (!fname.value.match(alphaLetters)) {
     e.preventDefault();
-    fnameError.innerText = "Only allowed alphabetical letters";
+    fnameError.innerText = "Only allowed alphabetical characters";
     success = false;
   }
 
@@ -80,8 +80,8 @@ form.addEventListener("submit", (e) => {
   //user is only allowed select one option
   var x = 0;
 
-  for (let i = 0; i < userTypes.length; i++) {
-    if (userTypes[i].checked) {
+  for (let i = 0; i < userType.length; i++) {
+    if (userType[i].checked) {
       x++;
     }
   }
@@ -90,8 +90,6 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     userTypeError.innerText = "Required (Select one option)";
     success = false;
-  } else {
-    userTypeError.innerText = "";
   }
 
   //on validation success form submission will notify with a success alert message
@@ -111,3 +109,8 @@ lname.onkeyup = hideError;
 email.onkeyup = hideError;
 contact.onkeyup = hideError;
 address.onkeyup = hideError;
+
+//hide error messages on clicking a radio button
+for (let i = 0; i < userType.length; i++) {
+  userType[i].onclick = hideError;
+}
